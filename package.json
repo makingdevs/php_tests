@@ -1,0 +1,10 @@
+{
+  "name": "php_tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "neodevelop <juan@makingdevs.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}
