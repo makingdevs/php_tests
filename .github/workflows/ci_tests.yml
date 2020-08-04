@@ -10,8 +10,14 @@ jobs:
   unit-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: PHPUnit tests
-        uses: php-actions/phpunit@v1
+      - name: Install composer and phpunit
+        uses: nick-zh/composer-php@master
+        with:
+          action: 'require --dev phpunit/phpunit ^9'
+      - name: Test app
+        uses: nick-zh/composer-php@master
+        with:
+          action: './vendor/bin/phpunit tests'
   build:
     runs-on: ubuntu-latest
     steps:
