@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PHPUnit tests
-        uses: php-actions/phpunit@v1
+        uses: nick-zh/composer-php@master
         with:
-          bootstrap: src/autoload.php
+          action: 'require --dev phpunit/phpunit ^9'
   build:
     runs-on: ubuntu-latest
     steps:
