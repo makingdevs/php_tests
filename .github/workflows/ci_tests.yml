@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: PHPUnit tests
         uses: php-actions/phpunit@v1
+        with:
+          bootstrap: src/autoload.php
   build:
     runs-on: ubuntu-latest
     steps:
