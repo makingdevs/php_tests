@@ -20,11 +20,6 @@ jobs:
         with:
           name: test-results
           path: test/phpunit/_junit/*
-      - uses: codecov/codecov-action@v1
-        with:
-          file: test/phpunit/_junit/junit.xml
-          flags: unittests # optional
-    
   build:
     runs-on: ubuntu-latest
     steps:
