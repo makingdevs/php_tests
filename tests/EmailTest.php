@@ -26,11 +26,19 @@ final class EmailTest extends TestCase
     );
   }
 
+
   public function testAnotherEmail(): void
   {
     $this->assertEquals(
       'juan@makingdevs.com',
       Email::fromString('juan@makingdevs.com')
+
+  
+   public function testManuelFromValidEmailAddress(): void
+  {
+    $this->assertInstanceOf(
+      Email::class,
+      Email::fromString('manuel.anzola@peopletech.com.co')
     );
   }
 }
