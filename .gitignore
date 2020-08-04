@@ -1,3 +1,7 @@
 .phpunit.result.cache
 node_modules/
-vendor/
+composer.phar
+/vendor/
+
+composer.lock
+yarn*
