@@ -25,4 +25,12 @@ final class EmailTest extends TestCase
       Email::fromString('user@example.com')
     );
   }
+
+  public function testAnotherEmail(): void
+  {
+    $this->assertEquals(
+      'juan@makingdevs.com',
+      Email::fromString('juan@makingdevs.com')
+    );
+  }
 }
