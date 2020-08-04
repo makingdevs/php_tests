@@ -13,7 +13,7 @@ jobs:
       - name: Install composer and phpunit
         uses: nick-zh/composer-php@master
         with:
-          action: 'install'
+          action: 'install -oa'
       - name: Test app
         run: ./vendor/bin/phpunit --log-junit test/phpunit/_junit/junit.xml -d memory_limit=512M --bootstrap src/autoload.php tests
   build:
