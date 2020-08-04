@@ -13,7 +13,7 @@ jobs:
       - name: PHPUnit tests
         uses: nick-zh/composer-php@master
         with:
-          action: 'require --dev phpunit/phpunit ^9'
+          action: 'composer require --dev phpunit/phpunit ^9'
   build:
     runs-on: ubuntu-latest
     steps:
