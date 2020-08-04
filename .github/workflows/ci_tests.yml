@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install composer and phpunit
-        uses: nick-zh/composer-php@master
+        uses: MilesChou/composer-action/7.2/install@master
         with:
-          action: 'install -oa'
+          args: install
       - name: Test app
         run: ./vendor/bin/phpunit --log-junit test/phpunit/_junit/junit.xml -d memory_limit=512M --bootstrap src/autoload.php tests
   build:
