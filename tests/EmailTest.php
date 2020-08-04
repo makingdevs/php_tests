@@ -32,9 +32,10 @@ final class EmailTest extends TestCase
     $this->assertEquals(
       'juan@makingdevs.com',
       Email::fromString('juan@makingdevs.com')
+    );
+  }
 
-  
-   public function testManuelFromValidEmailAddress(): void
+  public function testManuelFromValidEmailAddress(): void
   {
     $this->assertInstanceOf(
       Email::class,
